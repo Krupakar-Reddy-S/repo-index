@@ -1,0 +1,28 @@
+[project]
+name = "repo-index"
+version = "0.1.0"
+description = "Modular CLI tool that ingests GitHub repos into a searchable SQLite knowledge base"
+readme = "README.md"
+authors = [
+    { name = "Krupakar-Reddy-S", email = "krupakarreddysuda0@gmail.com" }
+]
+requires-python = ">=3.12.12"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "fastembed>=0.8.0",
+    "greenlet>=3.3.2",
+    "httpx>=0.28.1",
+    "pydantic-settings>=2.13.1",
+    "python-dotenv>=1.2.2",
+    "rich>=14.3.3",
+    "sqlalchemy>=2.0.48",
+    "sqlite-vec>=0.1.9",
+    "typer>=0.24.1",
+]
+
+[project.scripts]
+repo-index = "repo_index.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.2,<0.12.0"]
+build-backend = "uv_build"
