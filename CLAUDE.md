@@ -15,13 +15,13 @@ repo-index is a CLI tool (Python 3.12+, uv) that ingests GitHub repos into a sin
 
 ## Structure
 
-- `src/repo_index/cli.py` — entrypoint, all commands
-- `src/repo_index/models.py` — all 6 SQLAlchemy models in one file
-- `src/repo_index/db.py` — engine, session, schema init (ORM + FTS5 + vec0)
-- `src/repo_index/embed.py` — embedding generation + FTS rebuild
-- `src/repo_index/search.py` — hybrid search (FTS5 + sqlite-vec + RRF)
-- `src/repo_index/ingest/` — git.py, github.py, contributors.py
-- `src/repo_index/commands/` — sources.py, sync.py, status.py, search.py, contributors.py
+- `repo_index/cli.py` — entrypoint, all commands
+- `repo_index/models.py` — all 6 SQLAlchemy models in one file
+- `repo_index/db.py` — engine, session, schema init (ORM + FTS5 + vec0)
+- `repo_index/embed.py` — embedding generation + FTS rebuild
+- `repo_index/search.py` — hybrid search (FTS5 + sqlite-vec + RRF)
+- `repo_index/ingest/` — git.py, github.py, contributors.py
+- `repo_index/commands/` — sources.py, sync.py, status.py, search.py, contributors.py
 - `data/` — gitignored runtime (DB, clones, model cache)
 
 ## Running

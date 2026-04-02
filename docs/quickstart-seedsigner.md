@@ -141,14 +141,6 @@ Sources:
   SeedSigner/seedsigner  synced just now
 ```
 
-### Data Sizes
-
-| Item | Size |
-|------|------|
-| Database (relational + FTS + vectors) | 27 MB |
-| Git clone | 127 MB |
-| Embedding model (downloaded once) | 132 MB |
-
 ---
 
 ## Search
