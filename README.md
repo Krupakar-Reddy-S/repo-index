@@ -6,7 +6,7 @@ This is the **data layer** for a contributor dashboard. It handles ingestion, in
 
 ## Background
 
-This project is inspired by [project-lens](https://github.com/nicklykq/project-lens), a tool built for the SeedSigner project that ingests GitHub data, generates AI assessments via Claude, and stores everything in SQLite + ChromaDB. A companion UI ([project-pm](https://github.com/nicklykq/project-pm)) provides per-contributor task boards using FastAPI + Jinja2 + HTMX.
+This project is inspired by [project-lens](https://gitlab.com/kdmukAI-bot/project-lens), a tool built for the SeedSigner project that ingests GitHub data, generates AI assessments via Claude, and stores everything in SQLite + ChromaDB. A companion UI ([project-pm](https://gitlab.com/kdmukAI-bot/project-pm)) provides per-contributor task boards using FastAPI + Jinja2 + HTMX. The project-specific configuration lives in [project-lens-seedsigner-config](https://gitlab.com/kdmukAI-bot/project-lens-seedsigner-config).
 
 repo-index takes a different approach:
 
